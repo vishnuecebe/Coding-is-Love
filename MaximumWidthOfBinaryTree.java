@@ -25,7 +25,7 @@ class MaximumWidthOfBinaryTree {
     public int widthOfBinaryTree(TreeNode root) {
         Queue<Pair> queue=new LinkedList<>();
         queue.add(new Pair(root,0));
-        int maxWidth=Integer.MIN_VALUE;
+        int maxWidth= Integer.MIN_VALUE;
         while(!queue.isEmpty()){
             int qsize=queue.size();
             int min=queue.peek().number;
